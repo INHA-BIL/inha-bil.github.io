@@ -1,15 +1,36 @@
 - year: 2026
   status: "In Preparation"
+  title: "Growth Prediction of Pacific Abalone Using Monotonicity-Constrained Stacked Gaussian Processes with Conformal Calibration"
+  authors: "Won Park, Donghwan Kim, Seonghyeok Park, Seung-Won Seo, Ho-Jin Jung, Hyunju Ro, Han-Kyu Lim, and Seongil Jo"
+  # venue: ""
+  # link: ""
+
+- year: 2026
+  status: "In Preparation"
+  title: "Diffusion-Transformer Hybrid Framework for Dataset Construction in Deep Learning-Based TEL Detection from Satellite Imagery"
+  authors: "Soomin Kwon, Jeongin Lee**, Seongil Jo, and Jaeoh Kim"
+  # venue: ""
+  # link: ""
+
+- year: 2026
+  status: "In Preparation"
+  title: "Multi-Kernel Gaussian Process Stacking for Boiling Point Prediction with Calibrated Uncertainty"
+  authors: "Seonghyeok Park, Hyoju Kim, Keunhog Jeong, Seongil Jo, and Jaeoh Kim"
+  # venue: ""
+  # link: ""
+
+- year: 2026
+  status: "In Preparation"
   title: "A Domain-Informed Composite Kernel Gaussian Process Classifier for Molecular Toxicity Prediction with Principled Uncertainty Quantification"
   authors: "Junhee Kim, Seongil Jo, Joonyeon Koo, Jaeoh Kim and Keunhong Jeong"
-  # venue: ""
+  venue: "Journal of Cheminformatics"
   # link: ""
   
 - year: 2026
   status: "In Preparation"
-  title: "Gaussian Process-Based Bayesian Optimization for One-Class Classification"
+  title: "Gaussian Process-Based Bayesian Optimization for One-Class Classification: A Comparative Empirical Study"
   authors: "Inyoung Beak, Junhee Kim, Yeongmin Lee, Jaeoh Kim and Seongil Jo"
-  # venue: ""
+  venue: "Computational Statistics"
   # link: ""
 
 - year: 2025
