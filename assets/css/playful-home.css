@@ -1,4 +1,4 @@
-.playful-home{--paper:#f6f4eb;--ink:#243e5c;--electric:var(--accent);background:var(--paper);color:var(--ink)}
+.playful-home{--paper:#f7fafb;--ink:#243e5c;--electric:var(--accent);background:var(--paper);color:var(--ink)}
 .playful-home .site-header{background:var(--paper);border-bottom:1px solid #182d4220}
 .playful-home .header-inner{max-width:1240px;padding-inline:32px}
 .playful-home .site-nav a{border-radius:100px;transition:transform .35s cubic-bezier(.2,1.8,.4,1),background .2s}
