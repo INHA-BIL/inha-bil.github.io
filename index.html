@@ -1,49 +1,33 @@
 ---
 title: Home
-description: Bayesian Inference LAB at INHA University.
+description: 인하대학교 베이지안 추론 연구실. 지식과 데이터를 연결하는 베이지안 통계학을 연구합니다.
+experimental_home: true
+lang: ko
 ---
 
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-content">
-      <h1>Bayesian Inference Lab</h1>
-      <p class="hero-affiliation">Department of Statistics and Data Science, INHA University</p>
-    </div>
+<section class="posterior-hero">
+  <div class="posterior-heading">
+    <h1>인하대학교<br><em>베이지안 추론 연구실</em>입니다.</h1>
+    <div class="home-introduction"><p>지식과 데이터를 연결하는 베이지안 통계학을 연구합니다.</p></div>
   </div>
 </section>
 
-<section class="section research-areas-section">
-  <div class="section-inner">
-    <div class="research-layout">
-      <div class="research-content">
-        <div class="section-header">
-          <div>
-            <h2>Research Areas</h2>
-          </div>
-        </div>
-        <div class="topic-list home-topic-list">
-          <article class="topic">
-            <span class="topic-index">01</span>
-            <h3>Bayesian Nonparametrics &amp; Gaussian Processes</h3>
-          </article>
-          <article class="topic">
-            <span class="topic-index">02</span>
-            <h3>High-Dimensional Statistics &amp; Sparse Estimation</h3>
-          </article>
-          <article class="topic">
-            <span class="topic-index">03</span>
-            <h3>Scalable Bayesian Computation &amp; Variational Inference</h3>
-          </article>
-          <article class="topic">
-            <span class="topic-index">04</span>
-            <h3>Interdisciplinary Applied Bayesian Modeling</h3>
-          </article>
-        </div>
+<section class="section research-areas-section" id="research-areas">
+  <div class="section-inner"><div class="research-layout">
+    <div class="research-content">
+      <div class="section-header"><div><h2>연구 분야</h2></div></div>
+      <div class="topic-list home-topic-list">
+        <article class="topic is-selected"><span class="topic-index">01</span><h3><button class="research-select" type="button" data-research="0" aria-pressed="true" aria-controls="research-graphic">Bayesian Nonparametrics &amp; Gaussian Processes</button></h3></article>
+        <article class="topic"><span class="topic-index">02</span><h3><button class="research-select" type="button" data-research="1" aria-pressed="false" aria-controls="research-graphic">High-Dimensional Statistics &amp; Sparse Estimation</button></h3></article>
+        <article class="topic"><span class="topic-index">03</span><h3><button class="research-select" type="button" data-research="2" aria-pressed="false" aria-controls="research-graphic">Variational Inference &amp; Posterior Approximation</button></h3></article>
+        <article class="topic"><span class="topic-index">04</span><h3><button class="research-select" type="button" data-research="3" aria-pressed="false" aria-controls="research-graphic">Markov Chain Monte Carlo &amp; Sequential Monte Carlo</button></h3></article>
       </div>
-      <figure class="research-signature">
-        <img src="{{ '/assets/img/bayes-neon.jpg' | relative_url }}" alt="Bayesian probability formula in neon">
-      </figure>
     </div>
-  </div>
+    <figure class="gp-figure" id="research-graphic">
+      <div class="gp-heading"><span id="graphic-title">Gaussian Process</span><span class="gp-observations" aria-hidden="true">01 / 07</span></div>
+      <canvas id="gp-canvas" role="img" aria-label="Gaussian process posterior mean and pointwise 95% credible interval as observations arrive."></canvas>
+      <figcaption><span class="gp-mean-key" id="graphic-key">Posterior mean</span><span class="gp-band-key" id="graphic-band">95% credible interval</span><span>Illustrative example</span></figcaption>
+      <div class="graphic-controls" lang="en"><label for="research-parameter"><span id="parameter-label">Length scale</span><output id="parameter-value" for="research-parameter">0.37</output></label><input id="research-parameter" type="range" min="0.15" max="0.8" step="0.01" value="0.37"><div class="graphic-actions"><button type="button" id="graphic-pause" aria-pressed="false">Pause</button><button type="button" id="graphic-reset">Restart</button></div><p id="graphic-description">Adjust the length scale to explore smoothness. Shading shows pointwise posterior uncertainty in the latent function.</p></div>
+    </figure>
+  </div></div>
 </section>
-

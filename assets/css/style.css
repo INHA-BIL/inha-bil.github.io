@@ -6,9 +6,11 @@
   --muted: #5c6c73;
   --line: #dce6ea;
   --section-line: #c7d5dc;
-  --blue: #0f4f6e;
+  --blue: #395ed8;
+  --heading: #243e5c;
+  --secondary-accent: #62758d;
   --blue-deep: #0b2f45;
-  --teal: #147f7a;
+  --teal: #395ed8;
   --gold: #b98221;
   --red: #b94d3e;
   --shadow: 0 16px 36px rgba(15, 47, 69, 0.12);
@@ -75,9 +77,10 @@ a:hover {
 
 .header-inner {
   width: 100%;
-  min-height: 74px;
+  max-width: 1240px;
+  min-height: 92px;
   padding: 0 32px;
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -96,9 +99,9 @@ a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
-  flex: 0 0 48px;
+  width: 58px;
+  height: 58px;
+  flex: 0 0 58px;
 }
 
 .brand-mark img {
@@ -113,13 +116,14 @@ a:hover {
 }
 
 .brand-name {
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--ink);
 }
 
 .brand-affiliation {
   color: var(--muted);
-  font-size: 0.92rem;
+  font-size: 1rem;
 }
 
 .site-nav {
@@ -129,17 +133,17 @@ a:hover {
 }
 
 .site-nav a {
-  color: var(--muted);
-  font-size: 0.9rem;
-  font-weight: 600;
-  padding: 0.56rem 0.6rem;
+  color: var(--blue);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.75rem 0.85rem;
   border-radius: 6px;
 }
 
 .site-nav a:hover,
 .site-nav a.is-active {
   background: var(--surface-muted);
-  color: var(--blue-deep);
+  color: var(--blue);
 }
 
 .nav-toggle {
@@ -205,6 +209,13 @@ a:hover {
   line-height: 1.08;
   letter-spacing: 0;
   text-wrap: balance;
+}
+
+.page-hero h1 {
+  color: var(--heading);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-family: var(--font-sans);
+  letter-spacing: -0.035em;
 }
 
 .hero h1 {
@@ -360,7 +371,7 @@ a:hover {
 
 .section-kicker {
   margin: 0 0 0.2rem;
-  color: var(--gold);
+  color: var(--secondary-accent);
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0;
@@ -370,12 +381,34 @@ a:hover {
 .section h2,
 .page-section h2 {
   margin: 0;
-  color: var(--blue-deep);
-  font-family: var(--font-display);
+  color: var(--blue);
+  font-family: var(--font-sans);
   font-weight: 700;
   font-size: clamp(1.8rem, 4vw, 2.7rem);
   line-height: 1.1;
-  letter-spacing: 0;
+  letter-spacing: -0.025em;
+}
+
+body:not(.playful-home) .page-section h2 {
+  font-size: clamp(1.35rem, 2.4vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+body:not(.playful-home) .page-section h3,
+body:not(.playful-home) .publication-title,
+body:not(.playful-home) .software-line a,
+body:not(.playful-home) .software-line strong,
+body:not(.playful-home) .photo-item figcaption strong {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+body:not(.playful-home) .publication-year,
+body:not(.playful-home) .person-position {
+  font-size: 0.82rem;
+  font-weight: 700;
 }
 
 .section-summary {
@@ -438,7 +471,7 @@ a:hover {
 
 .card h3 {
   margin: 0 0 0.45rem;
-  color: var(--blue-deep);
+  color: var(--heading);
   font-size: 1.08rem;
   line-height: 1.25;
 }
@@ -481,7 +514,7 @@ a:hover {
 
 .publication-year {
   margin: 1.3rem 0 0.7rem;
-  color: var(--gold);
+  color: var(--secondary-accent);
   font-size: 0.84rem;
   font-weight: 900;
 }
@@ -497,7 +530,7 @@ a:hover {
 
 .software-line a,
 .software-line strong {
-  color: var(--blue-deep);
+  color: var(--heading);
   font-weight: 650;
 }
 
@@ -520,7 +553,7 @@ a:hover {
 .software-item h3,
 .project-item h3 {
   margin: 0.15rem 0 0;
-  color: var(--blue-deep);
+  color: var(--heading);
   font-size: 1.02rem;
 }
 
@@ -566,7 +599,7 @@ a:hover {
 }
 
 .photo-item figcaption strong {
-  color: var(--blue-deep);
+  color: var(--heading);
 }
 
 .photo-item figcaption a {
@@ -638,8 +671,8 @@ a:hover {
 
 .topic h3 {
   margin: 0;
-  color: var(--blue-deep);
-  font-family: var(--font-display);
+  color: var(--heading);
+  font-family: var(--font-sans);
   font-size: 1.22rem;
   line-height: 1.25;
 }
@@ -794,12 +827,12 @@ a:hover {
 
 .person-body h3 {
   margin: 0;
-  color: var(--blue-deep);
+  color: var(--heading);
 }
 
 .person-position {
   margin: 0.15rem 0 0.65rem;
-  color: var(--gold);
+  color: var(--secondary-accent);
   font-weight: 650;
   font-size: 0.9rem;
 }
@@ -832,7 +865,7 @@ a:hover {
 
 .publication-title {
   margin: 0;
-  color: var(--blue-deep);
+  color: var(--heading);
   font-size: 1.04rem;
   font-weight: 650;
 }
@@ -877,7 +910,7 @@ a:hover {
 
 .contact-item h3 {
   margin: 0 0 0.4rem;
-  color: var(--blue-deep);
+  color: var(--heading);
 }
 
 .contact-item p {
@@ -887,7 +920,7 @@ a:hover {
 
 .site-footer {
   border-top: 1px solid var(--line);
-  background: var(--blue-deep);
+  background: var(--heading);
   color: #dce8ee;
 }
 
@@ -944,7 +977,7 @@ a:hover {
     position: absolute;
     left: 16px;
     right: 16px;
-    top: 74px;
+    top: 100%;
     display: none;
     flex-direction: column;
     align-items: stretch;
@@ -1016,11 +1049,12 @@ a:hover {
 
   .header-inner {
     width: 100%;
+    min-height: 82px;
     padding: 0 12px;
   }
 
   .brand-name {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   .brand-affiliation {
@@ -1038,7 +1072,7 @@ a:hover {
 
   .hero h1,
   .page-hero h1 {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
   }
 
   .hero h1 {
