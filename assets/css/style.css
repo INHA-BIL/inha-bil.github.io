@@ -2,14 +2,15 @@
   --bg: #f7fafb;
   --surface: #ffffff;
   --surface-muted: #eef5f7;
-  --ink: #17242b;
-  --muted: #5c6c73;
+  --ink: #243e5c;
+  --muted: #243e5c;
   --line: #dce6ea;
   --section-line: #c7d5dc;
-  --blue: #395ed8;
+  --blue: #243e5c;
+  --accent: #395ed8;
   --heading: #243e5c;
-  --secondary-accent: #62758d;
-  --blue-deep: #0b2f45;
+  --secondary-accent: #243e5c;
+  --blue-deep: #243e5c;
   --teal: #395ed8;
   --gold: #b98221;
   --red: #b94d3e;
@@ -144,6 +145,11 @@ a:hover {
 .site-nav a.is-active {
   background: var(--surface-muted);
   color: var(--blue);
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: var(--accent);
 }
 
 .nav-toggle {

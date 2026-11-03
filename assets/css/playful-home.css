@@ -1,9 +1,10 @@
-.playful-home{--paper:#f6f4eb;--ink:#182d42;--electric:#395ed8;background:var(--paper);color:var(--ink)}
+.playful-home{--paper:#f6f4eb;--ink:#243e5c;--electric:var(--accent);background:var(--paper);color:var(--ink)}
 .playful-home .site-header{background:var(--paper);border-bottom:1px solid #182d4220}
 .playful-home .header-inner{max-width:1240px;padding-inline:32px}
 .playful-home .site-nav a{border-radius:100px;transition:transform .35s cubic-bezier(.2,1.8,.4,1),background .2s}
 .playful-home .site-nav a:hover{transform:translateY(-4px);background:#e7ebff}
-.playful-home .site-nav a.is-active{color:var(--electric)}
+.playful-home .site-nav a.is-active{color:var(--ink)}
+.playful-home .site-nav a:hover,.playful-home .site-nav a:focus-visible{color:var(--electric)}
 .posterior-hero{max-width:1240px;margin:auto;padding:144px 32px 28px}
 .lab-kicker,.art-topline,.art-bottomline,.research-kicker,.explore-research{font-family:var(--font-sans);font-size:11px;font-weight:700;letter-spacing:.12em}
 .lab-kicker{display:flex;align-items:center;gap:10px;margin:0 0 28px}
@@ -31,7 +32,7 @@
 .playful-home .home-topic-list{border-color:#182d4230}
 .playful-home .home-topic-list .topic{border-color:#182d4225;transition:padding .3s cubic-bezier(.2,1.5,.4,1),background .3s}
 .playful-home .home-topic-list .topic:hover{padding-left:12px;background:#e9edff}
-.playful-home .topic-index{color:var(--electric)}
+.playful-home .topic-index{color:var(--ink)}
 .playful-home .home-topic-list .topic h3{font-size:18px;font-weight:700}
 .playful-home .research-signature{margin-top:66px;transform:rotate(3deg);box-shadow:12px 14px 0 #e0e5fa;border:0;border-radius:4px;transition:transform .4s cubic-bezier(.2,1.5,.4,1)}
 .playful-home .research-signature:hover{transform:rotate(0deg) translateY(-7px)}
@@ -47,7 +48,8 @@
 .research-select{font:inherit;text-align:left;color:inherit;background:none;border:0;padding:10px 0;width:100%;cursor:pointer;line-height:1.5}
 .research-select:focus-visible{outline:2px solid #395ed8;outline-offset:6px}
 .playful-home .home-topic-list .topic.is-selected{background:#395ed809}
-.playful-home .home-topic-list .topic.is-selected h3{color:#395ed8}
+.playful-home .home-topic-list .topic h3{color:var(--ink)}
+.playful-home .home-topic-list .topic:hover h3,.playful-home .home-topic-list .topic:focus-within h3,.playful-home .home-topic-list .topic:hover .topic-index,.playful-home .home-topic-list .topic:focus-within .topic-index{color:var(--electric)}
 .graphic-controls{border-top:1px solid #182d4218;margin-top:18px;padding-top:14px}
 .graphic-controls label{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:#526473}
 .graphic-controls output{font-variant-numeric:tabular-nums;color:#395ed8}
@@ -71,6 +73,16 @@
 .home-greeting{font-size:clamp(20px,2.3vw,28px);margin:48px 0 12px;color:var(--ink);letter-spacing:-.035em}
 .home-introduction{margin-top:28px;font-family:var(--font-sans);font-weight:700;letter-spacing:-.055em;font-size:clamp(15px,1.8vw,20px);line-height:1.8;color:#526473;word-break:keep-all}
 .home-introduction p{margin:0}
+.playful-home .home-introduction,
+.playful-home .gp-heading,
+.playful-home .gp-observations,
+.playful-home .gp-figure figcaption,
+.playful-home .graphic-controls label,
+.playful-home .graphic-controls output,
+.playful-home .graphic-controls p,
+.playful-home .graphic-actions button{color:var(--ink)}
+.playful-home .graphic-actions button:hover,
+.playful-home .graphic-actions button:focus-visible{color:var(--electric)}
 @media(max-width:700px){.posterior-hero{padding-top:92px}}
 .posterior-hero .explore-research{margin-top:58px;border-top:1px solid #182d4230}
 .posterior-intro{font-size:15px;width:225px}
