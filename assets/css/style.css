@@ -1,5 +1,5 @@
 :root {
-  --bg: #f7fafb;
+  --bg: #f6f4eb;
   --surface: #ffffff;
   --surface-muted: #eef5f7;
   --ink: #243e5c;
@@ -71,7 +71,7 @@ a:hover {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(247, 250, 251, 0.94);
+  background: var(--bg);
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(14px);
 }
