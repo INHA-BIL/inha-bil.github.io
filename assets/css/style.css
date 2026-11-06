@@ -1,7 +1,8 @@
 :root {
   --bg: #f6f4eb;
-  --surface: #ffffff;
-  --surface-muted: #eef5f7;
+  --surface: var(--bg);
+  --surface-muted: #eeece3;
+  --nav-emphasis: #172d46;
   --ink: #243e5c;
   --muted: #243e5c;
   --line: #dce6ea;
@@ -144,12 +145,13 @@ a:hover {
 .site-nav a:hover,
 .site-nav a.is-active {
   background: var(--surface-muted);
-  color: var(--blue);
+  color: var(--nav-emphasis);
 }
 
 .site-nav a:hover,
 .site-nav a:focus-visible {
-  color: var(--accent);
+  color: var(--nav-emphasis);
+  background: var(--surface-muted);
 }
 
 .nav-toggle {
@@ -618,7 +620,7 @@ body:not(.playful-home) .person-position {
   border-radius: var(--radius);
   padding: 1.3rem;
   color: var(--muted);
-  background: rgba(255, 255, 255, 0.64);
+  background: var(--surface);
 }
 
 .page-hero {

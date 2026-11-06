@@ -2,9 +2,9 @@
 .playful-home .site-header{background:var(--paper);border-bottom:1px solid #182d4220}
 .playful-home .header-inner{max-width:1240px;padding-inline:32px}
 .playful-home .site-nav a{border-radius:100px;transition:transform .35s cubic-bezier(.2,1.8,.4,1),background .2s}
-.playful-home .site-nav a:hover{transform:translateY(-4px);background:#e7ebff}
-.playful-home .site-nav a.is-active{color:var(--ink)}
-.playful-home .site-nav a:hover,.playful-home .site-nav a:focus-visible{color:var(--electric)}
+.playful-home .site-nav a:hover{transform:translateY(-4px);background:var(--surface-muted)}
+.playful-home .site-nav a.is-active{color:var(--nav-emphasis)}
+.playful-home .site-nav a:hover,.playful-home .site-nav a:focus-visible{color:var(--nav-emphasis);background:var(--surface-muted)}
 .posterior-hero{max-width:1240px;margin:auto;padding:144px 32px 28px}
 .lab-kicker,.art-topline,.art-bottomline,.research-kicker,.explore-research{font-family:var(--font-sans);font-size:11px;font-weight:700;letter-spacing:.12em}
 .lab-kicker{display:flex;align-items:center;gap:10px;margin:0 0 28px}
