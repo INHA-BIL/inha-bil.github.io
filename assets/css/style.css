@@ -744,9 +744,9 @@ body:not(.playful-home) .person-position {
   align-items: center;
   min-height: 176px;
   padding: 0.75rem;
-  background: transparent;
-  border: 0;
-  border-radius: 0;
+  background: #eeece5;
+  border: 1px solid #dedbd2;
+  border-radius: var(--radius);
   overflow: visible;
   box-shadow: none;
 }
@@ -869,6 +869,8 @@ body:not(.playful-home) .person-position {
 .publication-item {
   display: grid;
   gap: 0.35rem;
+  background: #edf0f5;
+  border-color: #d9dfe8;
 }
 
 .publication-title {
