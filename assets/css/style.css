@@ -869,8 +869,8 @@ body:not(.playful-home) .person-position {
 .publication-item {
   display: grid;
   gap: 0.35rem;
-  background: #edf0f5;
-  border-color: #d9dfe8;
+  background: #eeece5;
+  border-color: #dedbd2;
 }
 
 .publication-title {
