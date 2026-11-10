@@ -154,6 +154,20 @@ a:hover {
   background: var(--surface-muted);
 }
 
+.site-nav .nav-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.nav-github svg {
+  flex-shrink: 0;
+}
+
+@media (min-width: 921px) and (max-width: 1100px) {
+  .nav-github .github-label { display: none; }
+}
+
 .nav-toggle {
   display: none;
   width: 42px;
