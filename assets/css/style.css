@@ -155,13 +155,14 @@ a:hover {
 }
 
 .site-nav .nav-github {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
+  display: block;
+  white-space: nowrap;
 }
 
 .nav-github svg {
-  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: -0.18em;
+  margin-right: 0.25rem;
 }
 
 @media (min-width: 921px) and (max-width: 1100px) {
