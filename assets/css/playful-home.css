@@ -5,7 +5,7 @@
 .playful-home .site-nav a:hover{transform:translateY(-4px);background:var(--surface-muted)}
 .playful-home .site-nav a.is-active{color:var(--nav-emphasis)}
 .playful-home .site-nav a:hover,.playful-home .site-nav a:focus-visible{color:var(--nav-emphasis);background:var(--surface-muted)}
-.posterior-hero{max-width:1240px;margin:auto;padding:144px 32px 28px}
+.posterior-hero{max-width:1240px;margin:auto;padding:120px 32px 28px}
 .lab-kicker,.art-topline,.art-bottomline,.research-kicker,.explore-research{font-family:var(--font-sans);font-size:11px;font-weight:700;letter-spacing:.12em}
 .lab-kicker{display:flex;align-items:center;gap:10px;margin:0 0 28px}
 .lab-kicker span{width:8px;height:8px;border-radius:50%;background:var(--electric)}
@@ -83,7 +83,7 @@
 .playful-home .graphic-actions button{color:var(--ink)}
 .playful-home .graphic-actions button:hover,
 .playful-home .graphic-actions button:focus-visible{color:var(--electric)}
-@media(max-width:700px){.posterior-hero{padding-top:92px}}
+@media(max-width:700px){.posterior-hero{padding-top:80px}}
 .posterior-hero .explore-research{margin-top:58px;border-top:1px solid #182d4230}
 .posterior-intro{font-size:15px;width:225px}
 .distribution-legend{display:flex;gap:24px;flex-wrap:wrap;font-size:13px;padding:8px 0}
