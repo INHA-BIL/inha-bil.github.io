@@ -1,4 +1,5 @@
-# Bayesian Inference LAB Website
+# INHA Bayesian Inference LAB Website
+
 
 ## People Photo Optimization
 
