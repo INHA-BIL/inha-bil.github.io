@@ -21,7 +21,7 @@ Keep the original high-resolution photo outside this repository: the script repl
 
 This repository contains the source code for the Bayesian Inference LAB website.
 
-- Website: <https://bayesian-inference-lab.github.io>
+- Website: <https://inha-bil.github.io>
 - Lab: Bayesian Inference LAB, INHA University
 - Framework: Jekyll
 - Hosting: GitHub Pages
@@ -77,8 +77,8 @@ gem -v
 처음 받는 경우:
 
 ```bash
-git clone https://github.com/bayesian-inference-lab/bayesian-inference-lab.github.io.git
-cd bayesian-inference-lab.github.io
+git clone https://github.com/INHA-BIL/inha-bil.github.io.git
+cd inha-bil.github.io
 ```
 
 이미 zip으로 받은 폴더가 있다면 해당 폴더에서 작업해도 됩니다. 단, GitHub에 push하려면 remote가 올바르게 연결되어 있어야 합니다.
@@ -92,14 +92,14 @@ git remote -v
 아래처럼 나와야 합니다.
 
 ```bash
-origin  https://github.com/bayesian-inference-lab/bayesian-inference-lab.github.io.git (fetch)
-origin  https://github.com/bayesian-inference-lab/bayesian-inference-lab.github.io.git (push)
+origin  https://github.com/INHA-BIL/inha-bil.github.io.git (fetch)
+origin  https://github.com/INHA-BIL/inha-bil.github.io.git (push)
 ```
 
 다르게 나오면 수정합니다.
 
 ```bash
-git remote set-url origin https://github.com/bayesian-inference-lab/bayesian-inference-lab.github.io.git
+git remote set-url origin https://github.com/INHA-BIL/inha-bil.github.io.git
 ```
 
 ## 5. Ruby 패키지 설치
